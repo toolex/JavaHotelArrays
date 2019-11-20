@@ -139,7 +139,7 @@ public class HotelTest {
     @Test
     public void findVacantBedrooms(){
         bedroom1.addGuest(guest1);
-        assertEquals(newBedrooms, hotel.getVacantBedrooms());
+        assertEquals(1, hotel.getVacantBedrooms());
     }
 
 }
