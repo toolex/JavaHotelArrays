@@ -18,10 +18,11 @@ public class Hotel {
 
     public int getVacantBedrooms() {
         ArrayList<Bedroom> vacant = new ArrayList<Bedroom>();
-        for (Bedroom bedroom: this.bedrooms);
-        if (bedroom == null){
-            vacant.add(bedroom);
+        for (Bedroom bedroom : this.bedrooms) {
+            if (bedroom.guestsCount() == 0) {
+                vacant.add(bedroom);
+            }
         }
+        return vacant.size();
     }
-    return vacant.size();
 }

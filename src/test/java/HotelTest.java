@@ -28,24 +28,21 @@ public class HotelTest {
 
     @Before
     public void before(){
-        this.bedrooms = new ArrayList<Bedroom>();
-        this.bedrooms.add(bedroom1);
-        this.bedrooms.add(bedroom2);
-
-        this.newBedrooms = new ArrayList<Bedroom>();
-        this.newBedrooms.add(bedroom2);
-
-        this.conferenceRooms = new ArrayList<ConferenceRoom>();
-        this.conferenceRooms.add(conferenceRoomA1);
-        this.conferenceRooms.add(conferenceRoomB2);
-
-        this.hotel = new Hotel("Hotel CodeClan", bedrooms, conferenceRooms);
 
         this.conferenceRoomA1 = new ConferenceRoom(5, "A1");
         this.conferenceRoomB2 = new ConferenceRoom(10, "B2");
 
         this.bedroom1 = new Bedroom(404,2,"Double", 50);
         this.bedroom2 = new Bedroom(306,1,"Single", 25);
+        this.bedrooms = new ArrayList<Bedroom>();
+        this.bedrooms.add(bedroom1);
+        this.bedrooms.add(bedroom2);
+
+        this.conferenceRooms = new ArrayList<ConferenceRoom>();
+        this.conferenceRooms.add(conferenceRoomA1);
+        this.conferenceRooms.add(conferenceRoomB2);
+
+        this.hotel = new Hotel("Hotel CodeClan", bedrooms, conferenceRooms);
 
         guest1 = new Guest("Bob");
         guest2 = new Guest("Alice");
